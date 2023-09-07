@@ -1,5 +1,5 @@
 #include "WiFiScan.h"
-#include "lang_var.h"
+// #include "lang_var.h"
 
 int num_beacon = 0;
 int num_deauth = 0;

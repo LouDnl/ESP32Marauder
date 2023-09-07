@@ -1,5 +1,5 @@
 #include "SDInterface.h"
-#include "lang_var.h"
+// #include "lang_var.h"
 
 bool SDInterface::initSD() {
   #ifdef HAS_SD
