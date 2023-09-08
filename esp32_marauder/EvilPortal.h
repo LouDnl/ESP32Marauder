@@ -16,7 +16,7 @@
 #else
   #include "Buffer.h"
 #endif
-#include "lang_var.h"
+// #include "lang_var.h"
 
 extern Settings settings_obj;
 #ifndef WRITE_PACKETS_SERIAL
@@ -39,8 +39,11 @@ extern Buffer buffer_obj;
 #define MAX_AP_NAME_SIZE 30
 #define WIFI_SCAN_EVIL_PORTAL 30
 
-char apName[MAX_AP_NAME_SIZE] = "PORTAL";
-char index_html[MAX_HTML_SIZE] = "TEST";
+// const char const* apName[MAX_AP_NAME_SIZE] = "PORTAL";
+// const char const* index_html[MAX_HTML_SIZE] = "TEST";
+
+static char apName[MAX_AP_NAME_SIZE] = "PORTAL";
+static char index_html[MAX_HTML_SIZE] = "TEST";
 
 struct ssid {
   String essid;

@@ -1,0 +1,13 @@
+#line 1 "E:\\workspaces\\ArduinoIDE\\ESP32Marauder\\esp32_marauder\\.vscode\\arduino.json"
+{
+    "arduino.path": "c:\\Users\\thier\\AppData\\Local\\Arduino15",
+    "arduino.analyzeOnSettingChange": true,
+    "arduino.analyzeOnOpen": true,
+    "intelliSenseGen": "global",
+    "configuration": "FlashMode=qio,LoopCore=1,EventsCore=1,USBMode=hwcdc,CDCOnBoot=default,MSCOnBoot=default,DFUOnBoot=default,UploadMode=default,PartitionScheme=fatflash,CPUFreq=240,UploadSpeed=921600,DebugLevel=none,EraseFlash=none",
+    "board": "esp32:esp32:lolin_s3",
+    "programmer": "esptool",
+    "port": "COM10",
+    "sketch": "esp32_marauder.ino",
+    "output": "../build"
+}

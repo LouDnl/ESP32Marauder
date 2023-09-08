@@ -1,0 +1,26 @@
+C:\Users\thier\AppData\Local\Temp\arduino\sketches\EFD42E8C9F9028002B0F2B653C65875D\libraries\lv_arduino\src\lv_draw\lv_draw_triangle.c.o: \
+ D:\thier\Documents\Arduino\libraries\lv_arduino\src\src\lv_draw\lv_draw_triangle.c \
+ D:\thier\Documents\Arduino\libraries\lv_arduino\src\src\lv_draw\lv_draw_triangle.h \
+ D:\thier\Documents\Arduino\libraries\lv_arduino\src\src\lv_draw\lv_draw_rect.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_core\lv_style.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_font\lv_font.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_conf_internal.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\lv_conf.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_font\lv_symbol_def.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_area.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_conf_internal.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_mem.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_log.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_types.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_color.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_math.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_area.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_anim.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_types.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_debug.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_draw\lv_draw_blend.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_color.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_area.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_draw\lv_draw_mask.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_math.h \
+ d:\thier\documents\arduino\libraries\lv_arduino\src\src\lv_misc\lv_mem.h

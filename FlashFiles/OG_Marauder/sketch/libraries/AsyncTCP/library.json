@@ -1,0 +1,23 @@
+#line 1 "E:\\workspaces\\ArduinoIDE\\ESP32Marauder\\esp32_marauder\\libraries\\AsyncTCP\\library.json"
+{
+  "name":"AsyncTCP",
+  "description":"Asynchronous TCP Library for ESP32",
+  "keywords":"async,tcp",
+  "authors":
+  {
+    "name": "Hristo Gochkov",
+    "maintainer": true
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/me-no-dev/AsyncTCP.git"
+  },
+  "version": "1.1.1",
+  "license": "LGPL-3.0",
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "build": {
+    "libCompatMode": 2
+  }  
+}
