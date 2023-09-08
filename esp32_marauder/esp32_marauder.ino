@@ -132,6 +132,7 @@ uint32_t currentTime  = 0;
 
 void backlightOn() {
   #ifdef HAS_SCREEN
+  #ifndef MARAUDER_ESP32CAM
     #ifdef MARAUDER_MINI
       digitalWrite(TFT_BL, LOW);
     #endif
@@ -140,10 +141,12 @@ void backlightOn() {
       digitalWrite(TFT_BL, HIGH);
     #endif
   #endif
+  #endif
 }
 
 void backlightOff() {
   #ifdef HAS_SCREEN
+  #ifndef MARAUDER_ESP32CAM
     #ifdef MARAUDER_MINI
       digitalWrite(TFT_BL, HIGH);
     #endif
@@ -151,6 +154,7 @@ void backlightOff() {
     #ifndef MARAUDER_MINI
       digitalWrite(TFT_BL, LOW);
     #endif
+  #endif
   #endif
 }
 
@@ -175,7 +179,9 @@ void setup()
   #endif
   
   #ifdef HAS_SCREEN
-    pinMode(TFT_BL, OUTPUT);
+    #ifndef MARAUDER_ESP32CAM
+      pinMode(TFT_BL, OUTPUT);
+    #endif
   #endif
   
   backlightOff();

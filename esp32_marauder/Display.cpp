@@ -46,9 +46,9 @@ void Display::RunSetup()
   //tft.fillScreen(TFT_BLACK);
   clearScreen();
 
-  //Serial.println("SPI_FREQUENCY: " + (String)SPI_FREQUENCY);
-  //Serial.println("SPI_READ_FREQUENCY:" + (String)SPI_READ_FREQUENCY);
-  //Serial.println("SPI_TOUCH_FREQUENCY: " + (String)SPI_TOUCH_FREQUENCY);
+  Serial.println("SPI_FREQUENCY: " + (String)SPI_FREQUENCY);  // DEBUG
+  Serial.println("SPI_READ_FREQUENCY:" + (String)SPI_READ_FREQUENCY);  // DEBUG
+  Serial.println("SPI_TOUCH_FREQUENCY: " + (String)SPI_TOUCH_FREQUENCY);  // DEBUG
 
   #ifdef KIT
     pinMode(KIT_LED_BUILTIN, OUTPUT);

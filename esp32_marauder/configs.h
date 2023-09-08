@@ -11,7 +11,8 @@
   //// BOARD TARGETS
   //#define MARAUDER_M5STICKC
   //#define MARAUDER_MINI
-  #define MARAUDER_V4
+  // #define MARAUDER_V4
+  #define MARAUDER_ESP32CAM
   //#define MARAUDER_V6
   //#define MARAUDER_KIT
   //#define GENERIC_ESP32
@@ -103,15 +104,15 @@
 
   #ifdef MARAUDER_ESP32CAM
     //#define FLIPPER_ZERO_HAT
-    //#define HAS_BATTERY
+    #define HAS_BATTERY
     #define HAS_BT
     //#define HAS_BUTTONS
     //#define HAS_NEOPIXEL_LED
     //#define HAS_PWR_MGMT
-    //#define HAS_SCREEN
+    #define HAS_SCREEN
     #define HAS_SD
     #define USE_SD
-    //#define HAS_TEMP_SENSOR
+    #define HAS_TEMP_SENSOR
   #endif
 
   #ifdef MARAUDER_FLIPPER
@@ -279,6 +280,61 @@
 
       #define STATUSBAR_COLOR 0x4A49
 
+    #endif
+
+    #ifdef MARAUDER_ESP32CAM
+      #define HAS_ILI9341
+      #define BANNER_TEXT_SIZE 2
+
+      #ifndef TFT_WIDTH
+        #define TFT_WIDTH 240
+      #endif
+
+      #ifndef TFT_HEIGHT
+        #define TFT_HEIGHT 320
+      #endif
+
+      #define TFT_SHIELD
+
+      #define SCREEN_WIDTH TFT_WIDTH
+      #define SCREEN_HEIGHT TFT_HEIGHT
+      #define HEIGHT_1 TFT_WIDTH
+      #define WIDTH_1 TFT_HEIGHT
+      #define STANDARD_FONT_CHAR_LIMIT (TFT_WIDTH/6) // number of characters on a single line with normal font
+      #define TEXT_HEIGHT 16 // Height of text to be printed and scrolled
+      #define BOT_FIXED_AREA 0 // Number of lines in bottom fixed area (lines counted from bottom of screen)
+      #define TOP_FIXED_AREA 48 // Number of lines in top fixed area (lines counted from top of screen)
+      #define YMAX 320 // Bottom of screen area
+      #define minimum(a,b)     (((a) < (b)) ? (a) : (b))
+      //#define MENU_FONT NULL
+      #define MENU_FONT &FreeMono9pt7b // Winner
+      //#define MENU_FONT &FreeMonoBold9pt7b
+      //#define MENU_FONT &FreeSans9pt7b
+      //#define MENU_FONT &FreeSansBold9pt7b
+      #define BUTTON_ARRAY_LEN 11
+      #define STATUS_BAR_WIDTH 16
+      #define LVGL_TICK_PERIOD 6
+
+      #define FRAME_X 100
+      #define FRAME_Y 64
+      #define FRAME_W 120
+      #define FRAME_H 50
+
+      // Red zone size
+      #define REDBUTTON_X FRAME_X
+      #define REDBUTTON_Y FRAME_Y
+      #define REDBUTTON_W (FRAME_W/2)
+      #define REDBUTTON_H FRAME_H
+
+      // Green zone size
+      #define GREENBUTTON_X (REDBUTTON_X + REDBUTTON_W)
+      #define GREENBUTTON_Y FRAME_Y
+      #define GREENBUTTON_W (FRAME_W/2)
+      #define GREENBUTTON_H FRAME_H
+
+      #define STATUSBAR_COLOR 0x4A49
+
+      #define KIT_LED_BUILTIN 13
     #endif
 
     #ifdef MARAUDER_V4
@@ -518,6 +574,25 @@
   //// END DISPLAY DEFINITIONS
 
   //// MENU DEFINITIONS
+  #ifdef MARAUDER_ESP32CAM
+    #define BANNER_TIME 100
+
+    #define COMMAND_PREFIX "!"
+
+    // Keypad start position, key sizes and spacing
+    #define KEY_X 120 // Centre of key
+    #define KEY_Y 50
+    #define KEY_W 240 // Width and height
+    #define KEY_H 22
+    #define KEY_SPACING_X 0 // X and Y gap
+    #define KEY_SPACING_Y 1
+    #define KEY_TEXTSIZE 1   // Font size multiplier
+    #define ICON_W 22
+    #define ICON_H 22
+    #define BUTTON_PADDING 22
+    //#define BUTTON_ARRAY_LEN 5
+  #endif
+
   #ifdef MARAUDER_V4
     #define BANNER_TIME 100
 
@@ -640,7 +715,8 @@
     #endif
 
     #ifdef MARAUDER_ESP32CAM
-      #define SD_IS_MMC
+      // #define SD_IS_MMC
+      #define SD_CS 4
     #endif
 
     #ifdef MARAUDER_FLIPPER
@@ -740,6 +816,8 @@
   #ifdef MARAUDER_M5STICKC
     #define MAX_HTML_SIZE 11400
   #elif defined(MARAUDER_MINI)
+    #define MAX_HTML_SIZE 11400
+  #elif defined(MARAUDER_ESP32CAM)
     #define MAX_HTML_SIZE 11400
   #elif defined(MARAUDER_V4)
     #define MAX_HTML_SIZE 11400
